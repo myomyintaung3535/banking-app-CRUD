@@ -1,2 +1,7 @@
-package dev.startup.banking.repository;public interface AccountRepository {
+package dev.startup.banking.repository;
+
+import dev.startup.banking.entity.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository extends JpaRepository<Account,Long > {
 }
